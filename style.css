@@ -85,6 +85,7 @@ a:hover {
 
 /* Profile */
 .profile {
+    float: right;
     margin-left: 2rem;
     margin-bottom: 1rem;
     width: 200px; /* 减小了侧边栏整体宽度 */
