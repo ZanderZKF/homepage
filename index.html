@@ -1,116 +1,199 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Kefei Zhang (张克非)</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <!-- 侧边栏：个人基本信息 -->
-        <aside class="sidebar">
-            <div class="profile-img-container">
-                <!-- 使用头像占位图，后续可替换为真实照片 -->
-                <img src="https://ui-avatars.com/api/?name=Kefei+Zhang&size=200&background=0D8ABC&color=fff&rounded=true" alt="Kefei Zhang" class="profile-img">
-            </div>
-            <h1>张克非<br><small>Kefei Zhang</small></h1>
-            <p class="title">硕士研究生 (2025级)</p>
-            <p class="institution">南开大学 计算机学院</p>
-            
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> <a href="mailto:nankai_zhangkefei@163.com">nankai_zhangkefei@163.com</a></p>
-                <p><i class="fab fa-weixin"></i> Zandersonn</p>
-                <p><i class="fas fa-map-marker-alt"></i> 天津, 中国</p>
-            </div>
-        </aside>
-
-        <!-- 主内容区 -->
-        <main class="content">
-            <!-- 个人简介 -->
-            <section id="about" class="section">
-                <h2>Biography</h2>
-                <p>Hi, there 👋 我是<strong>张克非</strong>，目前是南开大学计算机学院2025级准硕士研究生。在此之前，我于2021年至2025年在南开大学人工智能学院攻读智能科学与技术专业本科。</p>
-                <p>我的主要研究和实践方向包括 <strong>计算机视觉 (Computer Vision)</strong>、<strong>多模态信息融合</strong> 以及 <strong>大语言模型微调与部署</strong>。我曾参与水下图像恢复与显著目标检测网络的研究，并在国家超算中心（天津）参与流式语音识别和大模型指令微调的实习工作。</p>
-                <p><strong><i class="fas fa-graduation-cap"></i> 寻找机会：</strong> 我对人工智能的探索充满热情，乐于钻研与合作。欢迎随时通过邮件与我交流探讨！🤗</p>
-            </section>
-
-            <!-- 新闻动态 -->
-            <section id="news" class="section">
-                <h2>News</h2>
-                <ul class="news-list">
-                    <li><span class="date">2025.09</span> 将进入 <strong>南开大学计算机学院</strong> 攻读计算机科学与技术硕士学位。</li>
-                    <li><span class="date">2025.01</span> 开始本科毕业设计《融合水下图像恢复与梯度先验的显著目标检测网络》。</li>
-                    <li><span class="date">2024.07</span> 荣获 <strong>深圳杯数学建模竞赛</strong> 决赛全国第2名 🥈。</li>
-                    <li><span class="date">2023.07</span> 加入国家超算中心（天津）数据智能部进行实习，参与语音识别与医学大模型微调。</li>
-                    <li><span class="date">2022.11</span> 荣获 <strong>全国大学生数学建模竞赛</strong> 一等奖 (前0.55%) 🥇。</li>
-                </ul>
-            </section>
-
-            <!-- 教育经历 -->
-            <section id="education" class="section">
-                <h2>Education</h2>
-                <div class="item">
-                    <div class="item-header">
-                        <h3>南开大学 (Nankai University)</h3>
-                        <span class="duration">2025.09 - 至今</span>
-                    </div>
-                    <p>硕士研究生，计算机科学与技术，计算机学院</p>
+<body class="fixed-top-nav">
+    <header>
+        <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+            <div class="container">
+                <div class="navbar-brand social">
+                    <a href="mailto:nankai_zhangkefei@163.com" title="email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#" title="WeChat"><i class="fab fa-weixin"></i></a>
+                    <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <div class="item">
-                    <div class="item-header">
-                        <h3>南开大学 (Nankai University)</h3>
-                        <span class="duration">2021.09 - 2025.06</span>
-                    </div>
-                    <p>工学学士，智能科学与技术，人工智能学院</p>
-                    <ul>
-                        <li>GPA: 3.65/4 (专业排名: 22/133)</li>
-                        <li>主修课程：深度学习原理、机器学习、人工智能技术、机器视觉技术等。</li>
+                <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-right" id="navbarNav">
+                    <ul class="navbar-nav ml-auto flex-nowrap">
+                        <li class="nav-item active"><a class="nav-link" href="/">About <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     </ul>
                 </div>
-            </section>
+            </div>
+        </nav>
+    </header>
 
-            <!-- 项目与科研经历 -->
-            <section id="projects" class="section">
-                <h2>Research & Projects</h2>
-                
-                <div class="project-item">
-                    <div class="project-info">
-                        <h3>融合水下图像恢复与梯度先验的显著目标检测网络</h3>
-                        <p class="venue">本科毕业设计项目 | 2025.01 - 2025.05</p>
-                        <p class="desc">提出了一种创新的级联网络 <strong>ReHiDANet</strong>，前置网络 SemiUIR 生成高质量的增强图像和梯度图，并利用多尺度注意力融合策略将水下图像恢复与梯度先验信息融合到 HiDANet 中。实现多模态信息融合，在低对比度、颜色失真和模糊环境下实现了高效二元分割和显著检测。在公开水下数据集 USOD10k 上验证，精度和视觉质量均优于现有方法。</p>
+    <div class="container mt-5" role="main">
+        <div class="post">
+            <header class="post-header">
+                <h1 class="post-title">
+                    <span class="font-weight-bold">Kefei</span> Zhang (张克非)
+                </h1>
+                <p class="desc">Master student @ Nankai University</p>
+            </header>
+
+            <article>
+                <div class="profile float-right">
+                    <figure>
+                        <img src="profile.jpg" class="img-fluid z-depth-1 rounded" width="100%" height="auto" alt="profile_img" style="object-fit: cover; aspect-ratio: 3/4; object-position: top;">
+                    </figure>
+                    <div class="more-info">
+                        <p>nankai_zhangkefei@163.com</p>
+                        <p>WeChat: Zandersonn</p>
+                        <p>Tianjin, China</p>
                     </div>
                 </div>
 
-                <div class="project-item">
-                    <div class="project-info">
-                        <h3>基于 Wenet 的实时流式语音识别模型部署</h3>
-                        <p class="venue">国家超算中心（天津）数据智能部 | 实习生 | 2023.07 - 2023.08</p>
-                        <p class="desc">负责流式语音识别端到端功能的开发与模型部署。同时参与医学领域大语言模型的指令构建与微调任务。</p>
+                <div class="clearfix">
+                    <p>Hi, there 👋</p>
+                    <p>I am currently a 2025 Master student at the College of Computer Science, <a href="https://www.nankai.edu.cn/" target="_blank">Nankai University</a>. Before that, I obtained my B.Eng. in Intelligent Science and Technology from the College of Artificial Intelligence, Nankai University (2021-2025).</p>
+                    <p>My research interests focus on <strong>Computer Vision</strong>, <strong>Multi-modal Information Fusion</strong>, and <strong>Large Language Model Fine-tuning</strong>. I have worked on underwater image restoration, salient object detection, and streaming speech recognition.</p>
+                    <p><strong><i class="fa-solid fa-graduation-cap"></i> Looking for opportunities!</strong> I am passionate about AI exploration. If you are interested, feel free to contact me. 🤗</p>
+                </div>
+
+                <h2 id="news">News</h2>
+                <div class="news">
+                    <div class="table-responsive">
+                        <table class="table table-sm table-borderless">
+                            <tr>
+                                <th scope="row" style="width: 150px;">Sep, 2025</th>
+                                <td>I will start my Master's degree at the College of Computer Science, Nankai University.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" style="width: 150px;">Jan, 2025</th>
+                                <td>Started my undergraduate thesis on "Salient Object Detection Network Fusing Underwater Image Restoration and Gradient Priors".</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" style="width: 150px;">Jul, 2024</th>
+                                <td>Won the <strong>National 2nd Prize</strong> 🥈 in the Shenzhen Cup Mathematical Modeling Challenge.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" style="width: 150px;">Jul, 2023</th>
+                                <td>Started my internship at the National Supercomputing Center in Tianjin, focusing on ASR and LLM fine-tuning.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" style="width: 150px;">Nov, 2022</th>
+                                <td>Won the <strong>National 1st Prize</strong> 🥇 (Top 0.55%) in the CUMCM (Contemporary Undergraduate Mathematical Contest in Modeling).</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
 
-                <div class="project-item">
-                    <div class="project-info">
-                        <h3>多源信号分离火箭残骸定位模型</h3>
-                        <p class="venue">深圳杯数学建模竞赛 (全国第2名) | 2024.04 - 2024.07</p>
-                        <p class="desc">作为主力成员参与数学建模，构建基于多源信号分离的定位模型，解决复杂的工程定位问题。</p>
+                <h2 id="projects" style="margin-top: 2rem;">Selected Projects</h2>
+                <div class="publications">
+                    <ol class="bibliography">
+                        <!-- Project 1 -->
+                        <li>
+                            <div class="row">
+                                <div class="col-sm-2 abbr">
+                                    <abbr class="badge rounded w-100">Thesis</abbr>
+                                    <!-- 可替换为项目截图 -->
+                                    <img src="https://via.placeholder.com/200x150?text=ReHiDANet" class="preview z-depth-1 rounded" width="100%" height="auto" alt="project1">
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="title">Salient Object Detection Network Fusing Underwater Image Restoration and Gradient Priors</div>
+                                    <div class="author">
+                                        <em>Kefei Zhang</em>
+                                    </div>
+                                    <div class="periodical">
+                                        <em>Undergraduate Thesis Project</em>, 2025
+                                    </div>
+                                    <div class="periodical">
+                                        Proposed an innovative cascade network <strong>ReHiDANet</strong> for high-efficiency binary segmentation and salient object detection in low-contrast and color-distorted underwater environments.
+                                    </div>
+                                    <div class="links">
+                                        <a class="abstract btn btn-sm z-depth-0" role="button">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <!-- Project 2 -->
+                        <li>
+                            <div class="row">
+                                <div class="col-sm-2 abbr">
+                                    <abbr class="badge rounded w-100">Intern</abbr>
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="title">Real-time Streaming Speech Recognition Model Deployment based on Wenet</div>
+                                    <div class="author">
+                                        <em>Kefei Zhang</em>
+                                    </div>
+                                    <div class="periodical">
+                                        <em>National Supercomputing Center (Tianjin)</em>, 2023
+                                    </div>
+                                    <div class="periodical">
+                                        Responsible for end-to-end real-time speech recognition development and deployment. Participated in instruction building and fine-tuning for medical LLMs.
+                                    </div>
+                                    <div class="links">
+                                        <a class="abstract btn btn-sm z-depth-0" role="button">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Project 3 -->
+                        <li>
+                            <div class="row">
+                                <div class="col-sm-2 abbr">
+                                    <abbr class="badge rounded w-100">Contest</abbr>
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="title">Multi-source Signal Separation and Rocket Debris Localization Model</div>
+                                    <div class="author">
+                                        <em>Kefei Zhang</em> (Core Member)
+                                    </div>
+                                    <div class="periodical">
+                                        <em>Shenzhen Cup Mathematical Modeling Challenge (National 2nd Prize)</em>, 2024
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+                <h2 id="honors" style="margin-top: 2rem;">Honors & Awards</h2>
+                <div class="news">
+                    <div class="table-responsive">
+                        <table class="table table-sm table-borderless">
+                            <tr>
+                                <th scope="row" style="width: 150px;">2024</th>
+                                <td><strong>National 2nd Prize</strong>, Shenzhen Cup Mathematical Modeling Challenge</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" style="width: 150px;">2023-2024</th>
+                                <td><strong>Shiing-Shen Chern Academic Rookie Scholarship</strong> (University First-class)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" style="width: 150px;">2022-2023</th>
+                                <td><strong>Nankai University Innovation Scholarship</strong> (University Special)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" style="width: 150px;">2022</th>
+                                <td><strong>National 1st Prize (Top 0.55%)</strong>, CUMCM</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
-            </section>
 
-            <!-- 荣誉奖项 -->
-            <section id="awards" class="section">
-                <h2>Honors & Awards</h2>
-                <ul class="awards-list">
-                    <li><strong>陈省身学术新人奖学金</strong> (校级一等奖学金) <span class="year">2023 - 2024</span></li>
-                    <li><strong>深圳杯数学建模竞赛</strong> 决赛全国第2名 <span class="year">2024</span></li>
-                    <li><strong>南开大学创新奖学金</strong> (校级专项奖学金) <span class="year">2022 - 2023</span></li>
-                    <li><strong>全国大学生数学建模竞赛</strong> 一等奖 (前0.55%) <span class="year">2022</span></li>
-                </ul>
-            </section>
-        </main>
+            </article>
+        </div>
     </div>
+
+    <!-- Bootstrap JS & jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
