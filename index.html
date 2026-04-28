@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kefei Zhang (张克非)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 侧边栏：个人基本信息 -->
+        <aside class="sidebar">
+            <div class="profile-img-container">
+                <!-- 使用头像占位图，后续可替换为真实照片 -->
+                <img src="https://ui-avatars.com/api/?name=Kefei+Zhang&size=200&background=0D8ABC&color=fff&rounded=true" alt="Kefei Zhang" class="profile-img">
+            </div>
+            <h1>张克非<br><small>Kefei Zhang</small></h1>
+            <p class="title">硕士研究生 (2025级)</p>
+            <p class="institution">南开大学 计算机学院</p>
+            
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:nankai_zhangkefei@163.com">nankai_zhangkefei@163.com</a></p>
+                <p><i class="fab fa-weixin"></i> Zandersonn</p>
+                <p><i class="fas fa-map-marker-alt"></i> 天津, 中国</p>
+            </div>
+        </aside>
+
+        <!-- 主内容区 -->
+        <main class="content">
+            <!-- 个人简介 -->
+            <section id="about" class="section">
+                <h2>Biography</h2>
+                <p>Hi, there 👋 我是<strong>张克非</strong>，目前是南开大学计算机学院2025级准硕士研究生。在此之前，我于2021年至2025年在南开大学人工智能学院攻读智能科学与技术专业本科。</p>
+                <p>我的主要研究和实践方向包括 <strong>计算机视觉 (Computer Vision)</strong>、<strong>多模态信息融合</strong> 以及 <strong>大语言模型微调与部署</strong>。我曾参与水下图像恢复与显著目标检测网络的研究，并在国家超算中心（天津）参与流式语音识别和大模型指令微调的实习工作。</p>
+                <p><strong><i class="fas fa-graduation-cap"></i> 寻找机会：</strong> 我对人工智能的探索充满热情，乐于钻研与合作。欢迎随时通过邮件与我交流探讨！🤗</p>
+            </section>
+
+            <!-- 新闻动态 -->
+            <section id="news" class="section">
+                <h2>News</h2>
+                <ul class="news-list">
+                    <li><span class="date">2025.09</span> 将进入 <strong>南开大学计算机学院</strong> 攻读计算机科学与技术硕士学位。</li>
+                    <li><span class="date">2025.01</span> 开始本科毕业设计《融合水下图像恢复与梯度先验的显著目标检测网络》。</li>
+                    <li><span class="date">2024.07</span> 荣获 <strong>深圳杯数学建模竞赛</strong> 决赛全国第2名 🥈。</li>
+                    <li><span class="date">2023.07</span> 加入国家超算中心（天津）数据智能部进行实习，参与语音识别与医学大模型微调。</li>
+                    <li><span class="date">2022.11</span> 荣获 <strong>全国大学生数学建模竞赛</strong> 一等奖 (前0.55%) 🥇。</li>
+                </ul>
+            </section>
+
+            <!-- 教育经历 -->
+            <section id="education" class="section">
+                <h2>Education</h2>
+                <div class="item">
+                    <div class="item-header">
+                        <h3>南开大学 (Nankai University)</h3>
+                        <span class="duration">2025.09 - 至今</span>
+                    </div>
+                    <p>硕士研究生，计算机科学与技术，计算机学院</p>
+                </div>
+                <div class="item">
+                    <div class="item-header">
+                        <h3>南开大学 (Nankai University)</h3>
+                        <span class="duration">2021.09 - 2025.06</span>
+                    </div>
+                    <p>工学学士，智能科学与技术，人工智能学院</p>
+                    <ul>
+                        <li>GPA: 3.65/4 (专业排名: 22/133)</li>
+                        <li>主修课程：深度学习原理、机器学习、人工智能技术、机器视觉技术等。</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 项目与科研经历 -->
+            <section id="projects" class="section">
+                <h2>Research & Projects</h2>
+                
+                <div class="project-item">
+                    <div class="project-info">
+                        <h3>融合水下图像恢复与梯度先验的显著目标检测网络</h3>
+                        <p class="venue">本科毕业设计项目 | 2025.01 - 2025.05</p>
+                        <p class="desc">提出了一种创新的级联网络 <strong>ReHiDANet</strong>，前置网络 SemiUIR 生成高质量的增强图像和梯度图，并利用多尺度注意力融合策略将水下图像恢复与梯度先验信息融合到 HiDANet 中。实现多模态信息融合，在低对比度、颜色失真和模糊环境下实现了高效二元分割和显著检测。在公开水下数据集 USOD10k 上验证，精度和视觉质量均优于现有方法。</p>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <h3>基于 Wenet 的实时流式语音识别模型部署</h3>
+                        <p class="venue">国家超算中心（天津）数据智能部 | 实习生 | 2023.07 - 2023.08</p>
+                        <p class="desc">负责流式语音识别端到端功能的开发与模型部署。同时参与医学领域大语言模型的指令构建与微调任务。</p>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <h3>多源信号分离火箭残骸定位模型</h3>
+                        <p class="venue">深圳杯数学建模竞赛 (全国第2名) | 2024.04 - 2024.07</p>
+                        <p class="desc">作为主力成员参与数学建模，构建基于多源信号分离的定位模型，解决复杂的工程定位问题。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 荣誉奖项 -->
+            <section id="awards" class="section">
+                <h2>Honors & Awards</h2>
+                <ul class="awards-list">
+                    <li><strong>陈省身学术新人奖学金</strong> (校级一等奖学金) <span class="year">2023 - 2024</span></li>
+                    <li><strong>深圳杯数学建模竞赛</strong> 决赛全国第2名 <span class="year">2024</span></li>
+                    <li><strong>南开大学创新奖学金</strong> (校级专项奖学金) <span class="year">2022 - 2023</span></li>
+                    <li><strong>全国大学生数学建模竞赛</strong> 一等奖 (前0.55%) <span class="year">2022</span></li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
